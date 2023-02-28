@@ -3,11 +3,24 @@
 }
 
 .textarea {
-
+    position: absolute;
+    width: 976px;
+    height: 40px;
+    left: 70px;
+    top: 432px;
+    background: #F5F7FB;
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 20px;
 }
 
 .button {
-
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 1090px;
+    top: 432px;
+    background: #0066CC;
+    border-radius: 20px;
 }
 
 .button:hover {

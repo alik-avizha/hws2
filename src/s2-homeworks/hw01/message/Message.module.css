@@ -7,10 +7,20 @@
 }
 
 .imageAndText img {
-
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 1162px;
+    top: 204px;
 }
 
 .text {
+    position: absolute;
+    width: 527px;
+    height: 60px;
+    left: 635px;
+    top: 192px;
+    background: #0066CC;
 
 }
 
@@ -19,13 +29,37 @@
 }
 
 .name {
-
+    width: 40px;
+    height: 22px;
+    left: 1097px;
+    top: 199px;
 }
 
 .messageText {
+    width: 489px;
+    height: 20px;
+    left: 648px;
+    top: 224px;
 
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    white-space: pre-wrap;
 }
 
 .time {
-
+    position: absolute;
+    width: 26px;
+    height: 12px;
+    left: 1173px;
+    top: 257px;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
 }
