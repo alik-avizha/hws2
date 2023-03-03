@@ -3,27 +3,33 @@
 }
 
 .friendImageAndText {
+    background: #F5F7FB;
+    position: relative;
+    width: 414px;
+    height: 60px;
+    left: 118px;
+    top: 160px;
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 14px;
 
 }
 
 .friendImageAndText img {
-    position: absolute;
+    position: relative;
     width: 48px;
     height: 48px;
-    left: 70px;
-    top: 311px;
+    left: -51px;
+    top: 10px;
+
+
 
 }
 
 .friendText {
-    position: absolute;
-    width: 414px;
-    height: 60px;
-    left: 118px;
-    top: 299px;
-
-    background: #F5F7FB;
-    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    position: relative;
+    width: 510px;
+    left: 10px;
+    top: -50px;
 }
 
 .friendText:after {
@@ -31,16 +37,7 @@
 }
 
 .friendName {
-    width: 35px;
-    height: 20px;
-    left: 145px;
-    top: 307px;
-    font-family: monospace;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
+
 }
 
 .friendMessageText {
@@ -51,14 +48,13 @@
     position: absolute;
     width: 29px;
     height: 12px;
-    left: 80px;
-    top: 364px;
+    left: 73px;
+    top: 354px;
     font-family: monospace;
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 12px;
-
     color: #000000;
 
 }
