@@ -1,24 +1,25 @@
 .sendForm {
-
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 180px;
+    margin-bottom: 40px;
+    align-items: center;
 }
 
 .textarea {
-    position: relative;
-    width: 976px;
-    height: 1240px;
-    left: 70px;
-    top: 240px;
+    padding: 20px 20px;
+    margin-right: 40px;
+    width: 1280px;
+    height: 40px;
     background: #F5F7FB;
     box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
     border-radius: 20px;
 }
 
 .button {
-    position: relative;
     width: 120px;
     height: 40px;
-    left: 100px;
-    top: 240px;
     background: #0066CC;
     border-radius: 20px;
 }
@@ -26,6 +27,7 @@
 .button:hover {
 
 }
+
 .button:active {
 
 }

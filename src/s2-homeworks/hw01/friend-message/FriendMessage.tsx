@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
-import {MessageType} from "../HW1";
+import {MessageType} from '../HW1';
 
 export type FriendMessagePropsType = {
     message: MessageType
