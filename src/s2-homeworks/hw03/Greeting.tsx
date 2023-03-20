@@ -57,7 +57,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     className={s.button}
                     disabled={!name.trim()}
                 >
-                    Аdd
+                    А dd
                 </button>
             </div>
 
