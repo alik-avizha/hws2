@@ -1,10 +1,15 @@
 .spanBlock {
+    display: flex;
+    gap: 20px;
 }
 
 .span {
+    color: #0080FF;
+    font-size: 16px;
 }
 
 .input {
+    /*не перепределяются стили*/
 }
 
 .pen {

@@ -1,4 +1,7 @@
 .input:focus {
+    outline: none;
+    border: 1px solid #D1D1D1;
+
 }
 
 .input {
@@ -6,6 +9,8 @@
     height: 36px;
     border-radius: 3px;
     border: 1px solid #d1d1d1;
+    padding-left: 24px;
+    color: black;
 }
 
 .inputWrapper {
