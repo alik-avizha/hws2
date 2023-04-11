@@ -1,15 +1,28 @@
 .radio {
+    cursor: pointer;
+
 }
 
 .radio::before {
+
 }
 
 
 .radio:checked::before {
+
 }
+
 
 .label {
+    cursor: pointer;
+    display: flex;
+    gap: 13px;
+    color: #000000;
 }
 
+
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
