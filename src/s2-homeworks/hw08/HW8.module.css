@@ -1,23 +1,45 @@
 .item {
+
 }
 
 .item:last-of-type {
+
 }
 
 .users {
+
 }
 
 .buttonsContainer {
+    margin-left: 237px;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 12px;
 }
 
+
 .container {
+    margin-top: 33px;
+    margin-left: 70px;
+    margin-bottom: 43px;
+    display: flex;
+    flex-direction: column;
+    width: 606px;
 }
 
 .thead {
+    background: #E5E5E5;
+    font-weight: 600;
+    color: #000000;
 }
 
 .nameCol {
+    padding: 10px 218px 10px 17px;
+    border-bottom: 1px solid #E5E5E5;
 }
 
+
 .ageCol {
+    width: 303px;
+    padding-left: 17px;
 }
