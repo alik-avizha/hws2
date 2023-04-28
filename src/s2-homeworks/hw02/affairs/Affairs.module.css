@@ -1,9 +1,9 @@
 .buttonContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 32px;
     margin-bottom: 32px;
-    margin-left: 80px;
 }
 
 .all {
@@ -54,6 +54,4 @@
     gap: 17px;
     flex-wrap: wrap;
     max-width: 450px;
-    margin-left: 80px;
-    margin-bottom: 80px;
 }

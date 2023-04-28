@@ -2,14 +2,12 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 14px;
-    margin-top: 31px;
-    margin-bottom: 243px;
-    margin-left: 70px;
 }
 
 .inputAndButtonContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .error {
@@ -19,7 +17,7 @@
 }
 
 .input {
-    width: 372px;
+    width: 360px;
     height: 36px;
     border: 1px solid #D1D1D1;
     border-radius: 5px;

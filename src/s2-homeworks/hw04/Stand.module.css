@@ -1,9 +1,10 @@
 .stand {
-    margin: 90px 106px 55px 70px;
+    padding-right: 80px;
     display: flex;
     align-items: start;
     justify-content: space-between;
-    gap: 132px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .inputs {
