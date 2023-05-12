@@ -3,7 +3,6 @@
 .watch {
     font-weight: 400;
     font-size: 20px;
-    color: #000000;
 }
 .watch strong {
 }
@@ -12,7 +11,6 @@
     margin-bottom: 27px;
     font-weight: 400;
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .buttonsContainer {

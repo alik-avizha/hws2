@@ -1,5 +1,4 @@
 .greetingForm {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 14px;
 }
@@ -45,12 +44,15 @@
     color: #FFFFFF;
     background: #0066CC;
     border-radius: 3px;
+    border: none;
 }
 
-.button:focus {
+.button:hover {
+    background: #0080FF;
 }
 
 .button:active {
+    background: #0059B3;
 }
 
 .button:disabled {
@@ -61,7 +63,6 @@
 
 .text {
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
     margin-bottom: 9px;
 }
 

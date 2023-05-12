@@ -56,9 +56,9 @@
 }
 
 .friendTime {
-    font-family: monospace;
+    margin-top: 5px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
     margin-left: 6px;
 }
