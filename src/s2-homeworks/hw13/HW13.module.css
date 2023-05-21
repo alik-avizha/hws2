@@ -1,19 +1,37 @@
 .buttonsContainer {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
 }
 
 .responseContainer {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .imageContainer {
+    margin-left: 110px;
 }
 
 .image {
 }
 
 .textContainer{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    width: 510px;
+    height: 70px;
 }
 
 .code {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
 }
 
 .text {
