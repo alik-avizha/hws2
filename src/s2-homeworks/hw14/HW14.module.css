@@ -4,7 +4,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+
 }
 
 .loading {
@@ -14,6 +14,5 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #4D4D4D;
     margin-left: 300px;
 }

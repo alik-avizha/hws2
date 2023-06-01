@@ -48,7 +48,7 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-         setSearchParams({find: value})
+         setSearchParams({value})
 
         //
     }
