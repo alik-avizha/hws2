@@ -7,9 +7,9 @@ import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 
 /*
-* 1 - дописать SuperPagination
-* 2 - дописать SuperSort
-* 3 - проверить pureChange тестами
+* 1 - дописать SuperPagination +
+* 2 - дописать SuperSort +
+* 3 - проверить pureChange тестами +
 * 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
 * 4 - сделать стили в соответствии с дизайном
 * 5 - добавить HW15 в HW5/pages/JuniorPlus
@@ -52,34 +52,39 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
+                if (res) {
+                    console.log(res)
+                    setTechs(res.data.techs);
+                    setTotalCount(res.data.totalCount);
+                    //setSearchParams(params);
+                    setLoading(false)
+                }
                 // сохранить пришедшие данные
-
                 //
             })
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
-
-        //
+        const params = {sort, page: newPage, count: newCount};
+        sendQuery(params);
+        setPage(newPage);
+        setCount(newCount);
+        const newSearchParams = new URLSearchParams({page: String(newPage),count: String(newCount)});
+        setSearchParams(newSearchParams)
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        //setSort()
         // sendQuery(
         // setSearchParams(
-
+        setSort(newSort);
+        setPage(1);
+        const params = {sort: newSort, page, count};
+        sendQuery(params);
+        const newSearchParams = new URLSearchParams({page: String(page),count: String(count)});
+        setSearchParams(newSearchParams)
         //
     }
 
@@ -88,6 +93,7 @@ const HW15 = () => {
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)
+
     }, [])
 
     const mappedTechs = techs.map(t => (
@@ -107,7 +113,7 @@ const HW15 = () => {
             <div className={s2.hwTitle}>Homework #15</div>
 
             <div className={s2.hw}>
-                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+                {idLoading && <div id={'hw15-loading'} className={s.loading}></div>}
 
                 <SuperPagination
                     page={page}

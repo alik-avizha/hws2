@@ -1,21 +1,37 @@
 .tech {
-    width: 50vw;
+    width: 35vw;
+    border-bottom: 1px solid #E5E5E5;
+    padding-left: 17px;
 }
 
 .developer {
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0 250px 0 0;
 }
 
 .techHeader {
-    width: 50vw;
+    width: 35vw;
+    background: #E5E5E5;
+    padding: 10px 0 10px 17px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .developerHeader {
-
+    background: #E5E5E5;
+    padding: 10px 250px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px
 }
 
 .row {
     display: flex;
+    padding: 12px 0;
 }
 
 .rowHeader {
@@ -23,5 +39,21 @@
 }
 
 .loading {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7983ff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: loading-rotate 1s linear infinite;
+    position: absolute;
+    margin: 100px 250px;
 
+}
+@keyframes loading-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
