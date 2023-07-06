@@ -75,10 +75,7 @@ const HW15 = () => {
     }
 
     const onChangeSort = (newSort: string) => {
-        // делает студент
-        //setSort()
-        // sendQuery(
-        // setSearchParams(
+
         setSort(newSort);
         setPage(1);
         const params = {sort: newSort, page, count};
