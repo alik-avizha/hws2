@@ -21,23 +21,4 @@ HWS2 is a versatile web application that demonstrates the implementation of vari
 - UUID (for generating unique IDs)
 - TypeScript
 
-## Installation
-
-```bash
-git clone https://github.com/your-username/drag-and-drop-board.git
-
-Navigate to the project directory:
-cd drag-and-drop-board
-
-Install dependencies:
-npm install
-
-Start the development server:
-
-npm start
-
-bash
-Copy code
-npm start
-This will launch the application in development mode, and you can access it in your web browser at http://localhost:3000.
 
