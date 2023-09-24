@@ -2,7 +2,7 @@ import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
-    name: string // need to fix any
+    name: string
     setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void
     addUser: () => void
     onBlur: () => void
@@ -12,7 +12,6 @@ type GreetingPropsType = {
     lastUserName?: string
 }
 
-// презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
     {
         name,
@@ -23,7 +22,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         error,
         totalUsers,
         lastUserName,
-    } // деструктуризация пропсов
+    }
 ) => {
     const inputClass = error ? s.errorInput : s.input
 

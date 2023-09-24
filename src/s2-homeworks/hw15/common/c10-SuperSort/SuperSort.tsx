@@ -3,7 +3,6 @@ import downIconSVG from '../../images/downIcon.svg'
 import upIconSVG from '../../images/upIcon.svg'
 import upDownSVG from '../../images/upDownIcon.svg'
 
-// добавить в проект иконки и импортировать
 const downIcon = downIconSVG
 const upIcon = upIconSVG
 const noneIcon = upDownSVG
@@ -23,8 +22,7 @@ export const pureChange = (sort: string, down: string, up: string) => {
     } else {
         return down
     }
-    // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
-    //return up // исправить
+
 }
 
 const SuperSort: React.FC<SuperSortPropsType> = (
@@ -57,7 +55,6 @@ const SuperSort: React.FC<SuperSortPropsType> = (
                 style={{marginLeft: '5px',width:'20px',height:'17px'}}
             />
 
-            {/*{icon} а это убрать*/}
         </span>
     )
 }

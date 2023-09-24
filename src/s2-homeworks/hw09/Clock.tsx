@@ -5,13 +5,10 @@ import s from './Clock.module.css'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number | undefined>(undefined)
-    // for autotests // не менять // можно подсунуть в локалСторэдж нужную дату, чтоб увидеть как она отображается
     const [date, setDate] = useState<Date>(new Date(restoreState('hw9-date', Date.now())))
     const [show, setShow] = useState<boolean>(false)
 
     const start = () => {
-        // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
-        // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
         const id: number = window.setInterval(()=> {
             setDate(new Date(restoreState('hw9-date', Date.now())))
         },1000)
@@ -19,15 +16,14 @@ function Clock() {
     }
 
     const stop = () => {
-        // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
         clearInterval(timerId)
         setTimerId(undefined)
     }
 
-    const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
+    const onMouseEnter = () => {
         setShow(true)
     }
-    const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
+    const onMouseLeave = () => {
         setShow(false)
     }
 
@@ -70,14 +66,14 @@ function Clock() {
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
-                    disabled={timerId !== undefined} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={timerId !== undefined}
                     onClick={start}
                 >
                     start
                 </SuperButton>
                 <SuperButton
                     id={'hw9-button-stop'}
-                    disabled={timerId === undefined} // пишут студенты // задизэйблить если таймер не запущен
+                    disabled={timerId === undefined}
                     onClick={stop}
                 >
                     stop

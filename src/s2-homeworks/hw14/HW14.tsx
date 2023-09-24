@@ -5,13 +5,6 @@ import axios from 'axios'
 import SuperDebouncedInput from './common/c8-SuperDebouncedInput/SuperDebouncedInput'
 import {useSearchParams} from 'react-router-dom'
 
-/*
-* 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
-* 2 - дописать функцию sendQuery в HW14 +
-* 3 - дописать функцию onChangeText в HW14 +
-* 4 - сделать стили в соответствии с дизайном
-* 5 - добавить HW14 в HW5/pages/JuniorPlus
-* */
 
 const getTechs = (find: string) => {
     return axios
@@ -34,7 +27,6 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
-                // делает студент
                 if (res) {
                     setTechs(res.data.techs)
                 }
@@ -45,9 +37,7 @@ const HW14 = () => {
 
     const onChangeText = (value: string) => {
         setFind(value)
-        // делает студент
 
-        // добавить/заменить значение в квери урла
 
          setSearchParams({value})
 

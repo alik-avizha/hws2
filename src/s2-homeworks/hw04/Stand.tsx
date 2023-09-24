@@ -21,7 +21,6 @@ const Stand = () => {
                         onChange={(e) => setValue(e.currentTarget.value)}
                     />
                 </div>
-                {/*инпут с ошибкой:*/}
                 <div>
                     <SuperInputText
                         id={'hw4-super-input-with-error'}
@@ -41,19 +40,16 @@ const Stand = () => {
             </div>
 
             <div className={s.buttons}>
-                {/*обычная кнопка:*/}
                 <div>
                     <SuperButton id={'hw4-super-button-default'}>
                         Дефолтная
                     </SuperButton>
                 </div>
-                {/*красная кнопка:*/}
                 <div>
                     <SuperButton id={'hw4-super-button-red'} xType={'red'}>
                         Опасность
                     </SuperButton>
                 </div>
-                {/*задизэйбленная кнопка:*/}
                 <div>
                     <SuperButton
                         id={'hw4-super-button-disabled'}
@@ -63,7 +59,6 @@ const Stand = () => {
                         Не активна
                     </SuperButton>
                 </div>
-                {/*задизэйбленная кнопка:*/}
                 <div>
                     <SuperButton
                         id={'hw4-super-button-secondary'}
@@ -75,7 +70,6 @@ const Stand = () => {
             </div>
 
             <div className={s.checkboxes}>
-                {/*чекбокс с текстом:*/}
                 <div>
                     <SuperCheckbox
                         id={'hw4-super-checkbox-with-text'}
@@ -85,7 +79,6 @@ const Stand = () => {
                         Hometask
                     </SuperCheckbox>
                 </div>
-                {/*совместим со старым кодом:*/}
                 <div>
                     <SuperCheckbox
                         id={'hw4-super-checkbox-like-old'}

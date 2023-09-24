@@ -6,14 +6,7 @@ import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 
-/*
-* 1 - дописать SuperPagination +
-* 2 - дописать SuperSort +
-* 3 - проверить pureChange тестами +
-* 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
-* 4 - сделать стили в соответствии с дизайном
-* 5 - добавить HW15 в HW5/pages/JuniorPlus
-* */
+
 
 type TechType = {
     id: number
@@ -51,7 +44,6 @@ const HW15 = () => {
         setLoading(true)
         getTechs(params)
             .then((res) => {
-                // делает студент
                 if (res) {
                     console.log(res)
                     setTechs(res.data.techs);
@@ -59,7 +51,6 @@ const HW15 = () => {
                     //setSearchParams(params);
                     setLoading(false)
                 }
-                // сохранить пришедшие данные
                 //
             })
     }
