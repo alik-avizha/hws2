@@ -18,7 +18,7 @@ const HW6 = () => {
 
     return (
         <div id={'hw6'}>
-            <div className={s2.hwTitle}>Homework #6</div>
+            <div className={s2.hwTitle}>Work with local storage</div>
 
             <div className={s2.hw}>
                 <div className={s.editableSpanContainer}>

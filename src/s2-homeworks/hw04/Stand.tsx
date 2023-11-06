@@ -76,7 +76,7 @@ const Stand = () => {
                         checked={stateForAllCheckboxes}
                         onChangeChecked={setChecked}
                     >
-                        Hometask
+                        Label
                     </SuperCheckbox>
                 </div>
                 <div>

@@ -27,7 +27,7 @@ const HW3 = () => {
 
     return (
         <div id={'hw3'}>
-            <div className={s2.hwTitle}>Homework #3</div>
+            <div className={s2.hwTitle}>Interactive Text Analyzer with Greeting</div>
 
             <div className={s2.hw}>
                 <GreetingContainer

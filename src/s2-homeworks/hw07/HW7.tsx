@@ -17,7 +17,7 @@ const HW7 = () => {
 
     return (
         <div id={'hw7'}>
-            <div className={s2.hwTitle}>Homework #7</div>
+            <div className={s2.hwTitle}>Universal components (select, radio)</div>
 
             <div className={s2.hw}>
                 <div className={s.container}>

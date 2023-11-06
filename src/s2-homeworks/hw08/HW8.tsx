@@ -50,7 +50,7 @@ const HW8 = () => {
 
     return (
         <div id={'hw3'}>
-            <div className={s2.hwTitle}>Homework #8</div>
+            <div className={s2.hwTitle}>Work with sorting and tables</div>
             <div className={s2.hw}>
                 <div className={s.container}>
                     <div className={s.buttonsContainer}>

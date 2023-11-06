@@ -56,7 +56,6 @@ const HW15 = () => {
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
-        // делает студент
         const params = {sort, page: newPage, count: newCount};
         sendQuery(params);
         setPage(newPage);
@@ -98,7 +97,7 @@ const HW15 = () => {
 
     return (
         <div id={'hw15'}>
-            <div className={s2.hwTitle}>Homework #15</div>
+            <div className={s2.hwTitle}>Sortable Table with Pagination</div>
 
             <div className={s2.hw}>
                 {idLoading && <div id={'hw15-loading'} className={s.loading}></div>}
